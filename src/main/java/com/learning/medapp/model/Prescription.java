@@ -18,4 +18,10 @@ public class Prescription {
     private List<Tablet> tabletList;
     private Customer customer;
     private double totalPrice;
+
+    public Prescription(int prescriptionId, Customer customer, double totalPrice) {
+        this.prescriptionId = prescriptionId;
+        this.customer = customer;
+        this.totalPrice = totalPrice;
+    }
 }
